@@ -1,7 +1,6 @@
 # Create single VSI in dal09. Hourly billed with private network connection only.
 
-resource "ibm_compute_vm_instance" vm1 {
-  name                 = var.vm_name
+resource "ibm_compute_vm_instance" "vm1" {
   hostname             = var.hostname
   domain               = var.domain
   os_reference_code    = "CENTOS_7_64"
