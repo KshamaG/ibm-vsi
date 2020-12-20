@@ -7,7 +7,8 @@ variable "domain1" {
 }
 
 variable "tags1" {
-    default = ["env:dev"]
+    type    = set(string)
+    default = ["env:dev", "region:us-south"]
 }
 
 variable "hostname2" {
@@ -19,7 +20,8 @@ variable "domain2" {
 }
 
 variable "tags2" {
-    default = ["env:test"]
+    type    = set(string)
+    default = ["env:test", "region:us-south"]
 }
 
 variable "hostname3" {
@@ -31,5 +33,6 @@ variable "domain3" {
 }
 
 variable "tags3" {
-    default = ["env:prod"]
+    type    = set(string)
+    default = ["env:prod", "region:us-south"]
 }
