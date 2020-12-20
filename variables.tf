@@ -7,7 +7,7 @@ variable "domain1" {
 }
 
 variable "tags1" {
-    default = "env:dev"
+    default = ["env:dev"]
 }
 
 variable "hostname2" {
@@ -19,7 +19,7 @@ variable "domain2" {
 }
 
 variable "tags2" {
-    default = "env:test"
+    default = ["env:test"]
 }
 
 variable "hostname3" {
@@ -31,5 +31,5 @@ variable "domain3" {
 }
 
 variable "tags3" {
-    default = "env:prod"
+    default = ["env:prod"]
 }
