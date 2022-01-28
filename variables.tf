@@ -41,3 +41,9 @@ variable "datacenter" {
   type    = string
   default = "dal09"
 }
+
+variable "ssh_key" {
+  description = "SSH key to add to instance."
+  type        = string
+  default     = ""
+}
