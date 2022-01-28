@@ -5,7 +5,7 @@ resource "ibm_compute_vm_instance" "vm1" {
   domain               = var.domain1
   tags                 = var.tags1
   os_reference_code    = "CENTOS_7_64"
-  datacenter           = "dal09"
+  datacenter           = var.datacenter
   network_speed        = 100
   hourly_billing       = true
   private_network_only = false
@@ -21,7 +21,7 @@ resource "ibm_compute_vm_instance" "vm2" {
   domain               = var.domain2
   tags                 = var.tags2
   os_reference_code    = "CENTOS_7_64"
-  datacenter           = "dal09"
+  datacenter           = var.datacenter
   network_speed        = 100
   hourly_billing       = true
   private_network_only = false
@@ -36,7 +36,7 @@ resource "ibm_compute_vm_instance" "vm3" {
   domain               = var.domain3
   tags                 = var.tags3
   os_reference_code    = "CENTOS_7_64"
-  datacenter           = "dal09"
+  datacenter           = var.datacenter
   network_speed        = 100
   hourly_billing       = true
   private_network_only = false

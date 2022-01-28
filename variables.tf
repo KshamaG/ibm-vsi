@@ -1,38 +1,43 @@
 variable "hostname1" {
-    default = "vm1"
+  default = "vm1"
 }
 
 variable "domain1" {
-    default = "vm-dev-example.com"
+  default = "vm-dev-example.com"
 }
 
 variable "tags1" {
-    type    = set(string)
-    default = ["env:dev", "region:us-south"]
+  type    = set(string)
+  default = ["env:dev", "region:us-south"]
 }
 
 variable "hostname2" {
-    default = "vm2"
+  default = "vm2"
 }
 
 variable "domain2" {
-    default = "vm-test-example.com"
+  default = "vm-test-example.com"
 }
 
 variable "tags2" {
-    type    = set(string)
-    default = ["env:test", "region:us-south"]
+  type    = set(string)
+  default = ["env:test", "region:us-south"]
 }
 
 variable "hostname3" {
-    default = "vm3"
+  default = "vm3"
 }
 
 variable "domain3" {
-    default = "vm-prod-example.com"
+  default = "vm-prod-example.com"
 }
 
 variable "tags3" {
-    type    = set(string)
-    default = ["env:prod", "region:us-south"]
+  type    = set(string)
+  default = ["env:prod", "region:us-south"]
+}
+
+variable "datacenter" {
+  type    = string
+  default = "dal09"
 }
